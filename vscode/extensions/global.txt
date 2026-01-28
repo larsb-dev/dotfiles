@@ -1,0 +1,4 @@
+github.copilot
+github.copilot-chat
+pkief.material-icon-theme
+robbowen.synthwave-vscode
