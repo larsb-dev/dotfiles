@@ -1,26 +1,8 @@
 # VS Code Dotfiles Workspace
 
-This repository contains configuration files and resources to set up and customize your Visual Studio Code environment. Below is an overview of the folder structure and the purpose of each file:
+This repository contains configuration files and resources to set up and customize the Visual Studio Code environment. Below is an overview of the folder structure and the purpose of each file:
 
-## Quick Setup: Symlink User Settings
 
-To use your custom settings and keybindings globally, create symbolic links from this repository to your VS Code user settings directory:
-
-```sh
-cd ~/Library/Application\ Support/Code/User
-
-# Backup existing files
-
-mv settings.json settings.json.bak
-mv keybindings.json keybindings.json.bak
-mv snippets snippets.bak
-
-# Create symlinks
-
-ln -s ~/dotfiles/vscode/settings.json json
-ln -s ~/dotfiles/vscode/keybindings.json keybindings.json
-ln -s ~/dotfiles/vscode/snippets snippets
-```
 
 ## Folder Structure
 
@@ -58,7 +40,21 @@ snippets/                # Custom code snippets for VS Code
    - Run `extensions/install.sh` to install extensions from `global.txt` globally.
 
 3. **Apply Settings and Keybindings:**
-   - Create symlinks for `settings.json`, `keybindings.json` and `snippets` as described above.
+    - To apply custom settings and keybindings globally, create symbolic links from this repository to the VS Code user settings directory:
+
+       ```sh
+       cd ~/Library/Application\ Support/Code/User
+
+       # Backup existing files
+       mv settings.json settings.json.bak
+       mv keybindings.json keybindings.json.bak
+       mv snippets snippets.bak
+
+       # Create symlinks
+       ln -s ~/dotfiles/vscode/settings.json settings.json
+       ln -s ~/dotfiles/vscode/keybindings.json keybindings.json
+       ln -s ~/dotfiles/vscode/snippets snippets
+       ```
 
 ---
 
