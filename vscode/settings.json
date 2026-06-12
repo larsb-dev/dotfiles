@@ -1,7 +1,7 @@
 {
   "workbench.colorTheme": "SynthWave '84",
-  "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
+  // "workbench.activityBar.location": "hidden",
+  // "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "editor.minimap.enabled": false,
@@ -36,7 +36,6 @@
   },
   "prettier.configPath": "~/dotfiles/vscode/.prettierrc",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
   "editor.colorDecorators": false,
   "editor.codeLens": false,
@@ -61,9 +60,9 @@
   "security.workspace.trust.enabled": false,
   "php.inlayHints.parameters.enabled": false,
   "php.inlayHints.types.return": false,
-  // "[php]": {
-  //   "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
-  // },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+  },
   "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.preferredLocation": "panel",
 }
